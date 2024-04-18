@@ -1,0 +1,12 @@
+*{
+    font-family: "Quicksand", sans-serif;
+}
+
+:root {
+    --primary-color: #0d7cc6;
+    --secondary-color: #f68712;
+    --tertiary-color: #90c2e6;
+    --black: #010101;
+    --white: #f2f2f2;
+    --background-color: aliceblue;
+  }
