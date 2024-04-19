@@ -13,13 +13,13 @@
     --background-color: aliceblue;
 }
 
-.login-container{
+.login-container {
     display: flex;
     flex-direction: row;
     height: 100%;
 }
 
-.login-left{
+.login-left {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -29,22 +29,23 @@
     width: 50%;
 }
 
-.login-left h1{
+.login-left h1 {
     font-size: 2.5rem;
 }
 
-.login-left p{
+.login-left p {
     font-size: 1rem;
+    width: 29rem;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
 
-.email{
+.email {
     border-radius: 4px;
     background-color: rgba(128, 128, 128, 0.188);
     padding: 0.5rem 12rem;
@@ -54,7 +55,7 @@ form{
     align-items: flex-start;
 }
 
-.password{
+.password {
     background-color: rgba(128, 128, 128, 0.188);
     padding: 0.5rem 12rem;
     display: flex;
@@ -63,18 +64,18 @@ form{
 }
 
 .fa-circle-user,
-.fa-lock{
+.fa-lock {
     font-size: 1.2rem;
     margin-left: -11rem;
 }
 
-.login-left input{
+.login-left input {
     border: none;
     outline: none;
     background-color: transparent;
 }
 
-.login-btn{
+.login-btn {
     border: none;
     background-color: var(--primary-color);
     width: fit-content;
@@ -84,7 +85,7 @@ form{
     border-radius: 5px;
 }
 
-.error{
+.error {
     display: none;
     flex-direction: row;
     align-items: center;
@@ -97,7 +98,7 @@ form{
     margin-top: 0.5rem;
 }
 
-.login-right{
+.login-right {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -105,30 +106,30 @@ form{
     background-color: var(--primary-color);
 }
 
-.back{
+.back {
     width: 100%;
     height: 100vh;
 }
 
-.plane{
+.plane {
     position: absolute;
-    width: 17rem;
     margin-top: 4.5rem;
     margin-left: 4rem;
     animation: scaling 10s ease-in-out infinite;
 }
 
 @keyframes scaling {
-    0%{
-        width: 0;
+    0% {
         margin-top: 10rem;
+        width: 0;
     }
-    100%{
+
+    100% {
         width: 17rem;
     }
 }
 
-.person{
+.person {
     position: absolute;
     width: 47rem;
     margin-top: 9rem;
@@ -136,10 +137,88 @@ form{
 }
 
 @keyframes haut-bas {
-    0%{
+    0% {
         margin-top: 9rem;
     }
-    100%{
+
+    100% {
         margin-top: 11rem;
+    }
+}
+
+@media (max-width: 415px) {
+    .login-container {
+        display: block;
+        width: 100vw;
+    }
+
+    .login-left {
+        width: auto;
+        margin: 2rem;
+        gap: 1.5rem;
+    }
+
+    .login-left p {
+        font-size: 0.9rem;
+        width: auto;
+    }
+
+    form {
+        gap: 2rem;
+    }
+
+    .fa-circle-user,
+    .fa-lock {
+        font-size: 1.4rem;
+    }
+
+    .email {
+        padding: 1rem 12rem;
+    }
+
+    .password {
+        padding: 1rem 12rem;
+
+    }
+
+    .login-btn {
+        padding: 0.5rem 1rem;
+    }
+
+    .login-right {
+        width: auto;
+        height: 53vh;
+    }
+
+    .plane {
+        margin-top: 4.5rem;
+        position: absolute;
+        width: 10rem;
+    }
+
+    @keyframes scaling {
+        0% {
+            width: 0;
+            margin-top: 6rem;
+        }
+        
+        100% {
+            width: 10rem;
+        }
+    }
+
+    .person {
+        position: absolute;
+        width: 26rem;
+    }
+
+    @keyframes haut-bas {
+        0% {
+            margin-top: 7rem;
+        }
+
+        100% {
+            margin-top: 9rem;
+        }
     }
 }
