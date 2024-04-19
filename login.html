@@ -20,15 +20,18 @@
             <p>Enter your credentials to access a world of travel <br>
                 opportunities, personalized itineraries, and exclusive deals. <br>
                 Let's explore the world together!</p>
-            <div class="email">
-                <i class="fa-solid fa-circle-user"></i></i><input type="text" placeholder="test@gmail.com" required>
-            </div>
-            <div class="password">
-                <i class="fa-solid fa-lock"></i></i><input type="password" placeholder="Password">
-            </div>
-            <button class="login-btn">Login Now</button>
-            <div class="error">
-                <i class="fa-solid fa-triangle-exclamation"></i><p>email or password invalid</p>
+            <form id="login-form">
+                <div class="email">
+                    <i class="fa-solid fa-circle-user"></i></i><input type="text" placeholder="test@gmail.com" id="email">
+                </div>
+                <div class="password">
+                    <i class="fa-solid fa-lock"></i></i><input type="password" placeholder="Password" id="password">
+                </div>
+                <button type="submit" class="login-btn" id="loginBtn">Login Now</button>
+            </form>
+            <div class="error" id="error">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <p>email or password invalid</p>
             </div>
         </div>
         <div class="login-right">
