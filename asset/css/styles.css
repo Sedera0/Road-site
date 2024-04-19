@@ -1,5 +1,7 @@
-*{
+* {
     font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -9,4 +11,127 @@
     --black: #010101;
     --white: #f2f2f2;
     --background-color: aliceblue;
-  }
+}
+
+.login-container{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.login-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+.login-left h1{
+    font-size: 2.5rem;
+}
+
+.login-left p{
+    font-size: 1rem;
+}
+
+.email{
+    border-radius: 4px;
+    background-color: rgba(128, 128, 128, 0.188);
+    padding: 0.5rem 12rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.password{
+    background-color: rgba(128, 128, 128, 0.188);
+    padding: 0.5rem 12rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row;
+}
+
+.fa-circle-user,
+.fa-lock{
+    font-size: 1.2rem;
+    margin-left: -11rem;
+}
+
+.login-left input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.login-btn{
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 3rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.error{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    color: white;
+    background-color: rgb(255, 62, 62);
+    border: 0.5px solid red;
+    padding: 0.3rem 1rem;
+    margin-top: 0.5rem;
+}
+
+.login-right{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    background-color: var(--primary-color);
+}
+
+.back{
+    width: 100%;
+    height: 100vh;
+}
+
+.plane{
+    position: absolute;
+    width: 17rem;
+    margin-top: 4.5rem;
+    margin-left: 4rem;
+    animation: scaling 10s ease-in-out infinite;
+}
+
+@keyframes scaling {
+    0%{
+        width: 0;
+        margin-top: 10rem;
+    }
+    100%{
+        width: 17rem;
+    }
+}
+
+.person{
+    position: absolute;
+    width: 47rem;
+    margin-top: 9rem;
+    animation: haut-bas 2s ease-in-out alternate-reverse infinite;
+}
+
+@keyframes haut-bas {
+    0%{
+        margin-top: 9rem;
+    }
+    100%{
+        margin-top: 11rem;
+    }
+}
