@@ -12,7 +12,7 @@
     --white: #f2f2f2;
     --background-color: aliceblue;
 }
-
+/*---------------------------------------LOGIN PAGE----------------------------------------------*/
 .login-container {
     display: flex;
     flex-direction: row;
@@ -89,12 +89,11 @@ form {
     display: none;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 0.3rem;
+    width: 14rem;
     color: white;
     background-color: rgb(255, 62, 62);
     border: 0.5px solid red;
-    padding: 0.3rem 1rem;
+    padding: 0.3rem 0.5rem;
     margin-top: 0.5rem;
 }
 
@@ -123,7 +122,7 @@ form {
         margin-top: 10rem;
         width: 0;
     }
-
+    
     100% {
         width: 17rem;
     }
@@ -140,11 +139,13 @@ form {
     0% {
         margin-top: 9rem;
     }
-
+    
     100% {
         margin-top: 11rem;
     }
 }
+
+/*---------------------------------------RESPONSIVE LOGIN PAGE----------------------------------------------*/
 
 @media (max-width: 415px) {
     .login-container {
@@ -162,23 +163,23 @@ form {
         font-size: 0.9rem;
         width: auto;
     }
-
+    
     form {
         gap: 2rem;
     }
-
+    
     .fa-circle-user,
     .fa-lock {
         font-size: 1.4rem;
     }
-
+    
     .email {
         padding: 1rem 12rem;
     }
 
     .password {
         padding: 1rem 12rem;
-
+        
     }
 
     .login-btn {
@@ -189,13 +190,13 @@ form {
         width: auto;
         height: 53vh;
     }
-
+    
     .plane {
         margin-top: 4.5rem;
         position: absolute;
         width: 10rem;
     }
-
+    
     @keyframes scaling {
         0% {
             width: 0;
@@ -206,19 +207,27 @@ form {
             width: 10rem;
         }
     }
-
+    
     .person {
         position: absolute;
         width: 26rem;
     }
-
+    
     @keyframes haut-bas {
         0% {
             margin-top: 7rem;
         }
-
+        
         100% {
             margin-top: 9rem;
         }
     }
 }
+
+/*---------------------------------------INDEX HTML PAGE----------------------------------------------*/
+
+/*---------------------------------------HEADER----------------------------------------------*/
+
+/*-----------------------------------------NAVBAR---------------------------------------------------*/
+
+/*--------------------------------------------HERO--------------------------------------------------*/
