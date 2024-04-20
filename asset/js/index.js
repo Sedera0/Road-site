@@ -3,5 +3,7 @@ window.onload = function(){
 
     if(isLoggedIn === "true"){
         window.location.href = "index.html";
+    } else{
+        window.location.href = "login.html";
     }
 };
