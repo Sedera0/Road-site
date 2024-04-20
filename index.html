@@ -16,25 +16,25 @@
 <body>
 
     <!------------------------------------------------------HEADER---------------------------------------------------------------------->
+    <!------------------------------------------------------NAVBAR---------------------------------------------------------------------->
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <a href="#Home"><img src="asset/images/logo.png" alt="" class="logo">
+                <h2>JCRAM'V</h2>
+            </a>
+        </div>
+        <div class="nav-list">
+            <a href="Home">Home</a>
+            <a href="About">About</a>
+            <a href="Destination">Destination</a>
+            <a href="Hotel">Hotel</a>
+            <a href="Reservation">Reservation</a>
+        </div>
+        <i class="fa-solid fa-bars" id="showMenu"></i>
+        <button class="sign-out-btn">Sign out</button>
+    </nav>
     <header>
 
-        <!------------------------------------------------------NAVBAR---------------------------------------------------------------------->
-        <nav class="navbar" id="navbar">
-            <div class="logo">
-                <a href="#Home"><img src="asset/images/logo.png" alt="" class="logo">
-                    <h2>JCRAM'V</h2>
-                </a>
-            </div>
-            <div class="nav-list">
-                <a href="Home">Home</a>
-                <a href="About">About</a>
-                <a href="Destination">Destination</a>
-                <a href="Hotel">Hotel</a>
-                <a href="Reservation">Reservation</a>
-            </div>
-            <i class="fa-solid fa-bars" id="showMenu"></i>
-            <button class="sign-out-btn">Sign out</button>
-        </nav>
 
         <!------------------------------------------------------RESPONSIVE  MENU---------------------------------------------------------------------->
         <div class="menu" id="menu">
@@ -69,6 +69,46 @@
             </div>
         </div>
     </header>
+
+    <!--------------------------------------------------------MAIN-------------------------------------------------------------------->
+    <main>
+        
+        <!--------------------------------------------------------SECTION 1-------------------------------------------------------------------->
+        <section class="place"  id="place">
+            <div class="place-left">
+                <img src="asset/images/about1.jpg" alt="" class="placeX place1 one">
+                <img src="asset/images/about2.jpg" alt="" class="placeX place2 two">
+                <img src="asset/images/about3.jpg" alt="" class="placeX place2 three">
+                <img src="asset/images/about4.jpg" alt="" class="placeX place1 four">
+            </div>
+            <div class="place-right">
+                <div class="place-description">
+                    <h2>We Recommende a Beautiful plce <br> every month</h2>
+                    <p>At JCRAM'V, we strive to bring you the most stunning destination every <br>
+                    month. From tropical paradises to historic landmarks, our curated <br>
+                    selection are sure to inspire your next adventure.</p>
+                    <button class="reservation-btn">Reservation</button>
+                </div>
+                <div class="place-rating">
+                    <div class="rating1">
+                        <h2 id="count1">0%</h2>
+                        <p>of satisfied customers recommend <br>
+                        our services</p>
+                    </div>
+                    <div class="rating2">
+                        <h2 id="count2">0</h2>
+                        <p>countries visited <br> annually</p>
+                    </div>
+                    <div class="rating3">
+                        <h2 id="count3">0</h2>
+                        <p>years of experience in the travel <br>
+                            industry</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
 </body>
 

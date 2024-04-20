@@ -21,7 +21,7 @@ header {
     align-items: center;
     width: auto;
     height: 98vh;
-    margin: 0.5rem;
+    margin: 1rem;
     border-radius: 35px;
     background-color: rgba(128, 128, 128, 0.177);
 }
@@ -33,12 +33,12 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 5rem;
-    width: 96%;
+    width: 95vw;
     background-color: white;
     border-radius: 10px;
     position: fixed;
-    margin-top: 1rem;
-    z-index: 1000;
+    margin: 1rem 2rem;
+    z-index: 9000;
     transition: top 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -63,8 +63,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    text-align: center;
-    margin-left: 5rem;
+    text-align: center;;
     gap: 3rem;
 }
 
@@ -94,9 +93,11 @@ header {
     width: 100vw;
     padding: 1rem 0;
     top: 0;
+    margin: 0;
+    border-radius: 0px;
     background-color: var(--tertiary-color);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 10000;
+    z-index: 90000;
 }
 
 /*-------------------------------------------------------------------------HERO---------------------------------------------------*/
@@ -204,7 +205,7 @@ header {
 }
 
 /*--------------------------------------------------------------RESPONSIVE HERO-------------------------------------------------------------------*/
-.menu{
+.menu {
     z-index: 9000;
     display: flex;
     flex-direction: column;
@@ -220,18 +221,18 @@ header {
     transform: translateX(-100%);
 }
 
-.menu.show{
+.menu.show {
     transform: translateX(100%);
 }
 
-.menu a{
+.menu a {
     text-decoration: none;
     color: var(--black);
     margin-left: 1.7rem;
     font-weight: bold;
 }
 
-.menu i{
+.menu i {
     color: var(--secondary-color);
     padding: rem;
     font-size: 1.7rem;
@@ -278,7 +279,6 @@ header {
     }
 
     .hero-rigth {
-        margin-top: ;
         height: 65%;
         margin-bottom: -4rem;
     }
@@ -293,7 +293,7 @@ header {
         margin-top: 4.5rem;
         margin-left: 2rem;
     }
-    
+
     .fleche {
         width: 5rem;
         margin-left: 17rem;
@@ -313,11 +313,107 @@ header {
         border-radius: 10px;
     }
 
-    .note i{
+    .note i {
         margin-left: -1rem;
     }
 
     .note p {
         font-size: 0.8rem;
     }
+}
+
+/*--------------------------------------------------------------------------SECTION 1----------------------------------------------------------------------------------------------*/
+.place {
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 1s ease, transform 1s ease;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.place.visible{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.place-left {
+    width: 50vw;
+    display: flex;
+    margin-left: 8rem;;
+}
+
+.placeX{
+    border-radius: 15px;
+}
+
+.place1{
+    width: 15rem;
+    height: 14rem;
+}
+
+.place2{
+    height: 16rem;
+    width: 17rem;
+}
+
+.one{
+    position: absolute;
+    top: 0;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.two{
+    position: absolute;
+    top: 0;
+    margin-top: 1rem;
+    margin-left: 18rem;
+}
+.three{
+    position: absolute;
+    margin-top: -5rem;
+    margin-left: 2rem;
+    
+}
+.four{
+    position: absolute;
+    margin-top: -4rem;
+    margin-left: 20rem;
+
+}
+
+.place-right{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin-left: -5rem;
+    gap: 2rem;
+}
+
+.place-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.place-description button{
+    width: fit-content;
+    padding: 0.7rem 2rem;
+    margin-right: 2rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.place-rating{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 1rem;
 }
