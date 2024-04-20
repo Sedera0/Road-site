@@ -1,9 +1,10 @@
-window.onload = function(){
-    const isLoggedIn = localStorage.getItem("isLoggedIn");
+window.addEventListener("scroll", function(){
+    const navbar = document.getElementById("navbar");
+    const sticky = navbar.offsetTop;
 
-    if(isLoggedIn === ){
-        window.location.href = "index.html";
-    } else{
-        window.location.href = "login.html";
+    if(window.scrollY > sticky){
+        navbar.classList.add("sticky")
+    }else{
+        navbar.classList.remove("sticky")
     }
-};
+});
