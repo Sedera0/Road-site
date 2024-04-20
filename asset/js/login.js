@@ -12,9 +12,10 @@ document.getElementById("login-form").addEventListener("submit", function (e) {
         error.style.display = "flex";
     }
     else {
+        localStorage.setItem("isLoggedIn", "true");
         loginBtn.innerHTML = "...";
         setTimeout(function () {
             window.location.href = "index.html";
-        }, 5000);
+        }, 3000);
     }
 });
