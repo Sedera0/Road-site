@@ -15,7 +15,7 @@
 }
 
 /*--------------------------------------------HEADER---------------------------------------------*/
-header{
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +27,7 @@ header{
 }
 
 /*--------------------------------------------NAVBAR---------------------------------------------*/
-.navbar{
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -42,24 +42,24 @@ header{
     transition: top 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.logo a{
+.logo a {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-left: 1rem;
 }
 
-.logo img{
+.logo img {
     width: 4rem;
 }
 
-.logo a{
+.logo a {
     font-size: 1rem;
     text-decoration: none;
     color: var(--primary-color);
 }
 
-.nav-list{
+.nav-list {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -68,13 +68,17 @@ header{
     gap: 3rem;
 }
 
-.nav-list a{
+.nav-list a {
     text-decoration: none;
     color: var(--black);
     font-weight: 500;
 }
 
-.sign-out-btn{
+#showMenu {
+    display: none;
+}
+
+.sign-out-btn {
     height: fit-content;
     padding: 0.5rem 2rem;
     margin-right: 2rem;
@@ -83,9 +87,9 @@ header{
     color: var(--white);
     border-radius: 5px;
 }
- 
+
 /*-------------------------------------------------------------------------STICKY NAV---------------------------------------------------*/
-.sticky{
+.sticky {
     position: sticky;
     width: 100vw;
     padding: 1rem 0;
@@ -96,7 +100,7 @@ header{
 }
 
 /*-------------------------------------------------------------------------HERO---------------------------------------------------*/
-.hero{
+.hero {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -106,7 +110,7 @@ header{
     gap: 20rem;
 }
 
-.hero-left{
+.hero-left {
     display: flex;
     flex-direction: column;
     margin-left: 2rem;
@@ -114,11 +118,11 @@ header{
     gap: 2rem;
 }
 
-.hero-left p{
+.hero-left p {
     width: 27rem;
 }
 
-.get-started-btn{
+.get-started-btn {
     width: fit-content;
     padding: 0.7rem 2rem;
     margin-right: 2rem;
@@ -128,7 +132,7 @@ header{
     border-radius: 5px;
 }
 
-.hero-rigth{
+.hero-rigth {
     height: 100%;
     width: 100%;
     display: flex;
@@ -138,7 +142,7 @@ header{
     border-radius: 0px 35px 35px 0px;
 }
 
-.background{
+.background {
     position: absolute;
     margin-top: 5rem;
     padding: 16.5rem 14rem;
@@ -147,7 +151,7 @@ header{
     border-radius: 50% 40% 15px 50%;
 }
 
-.girl{
+.girl {
     position: absolute;
     margin-top: 5rem;
     margin-left: 5rem;
@@ -155,7 +159,7 @@ header{
     width: 29rem;
 }
 
-.fleche{
+.fleche {
     z-index: 5;
     margin-bottom: 13rem;
     margin-left: 25rem;
@@ -163,7 +167,7 @@ header{
     width: 8rem;
 }
 
-.banner{
+.banner {
     position: absolute;
     margin-top: 32rem;
     margin-right: 17.5rem;
@@ -173,7 +177,7 @@ header{
     box-shadow: 0px 0px 1px 2px rgba(255, 255, 255, 0.512);
 }
 
-.note{
+.note {
     font-size: 1rem;
     border-radius: 20px;
     padding: 0.2rem 0.5rem;
@@ -187,14 +191,133 @@ header{
     margin-right: 19rem;
 }
 
-.note i{
+.note i {
     background-color: var(--secondary-color);
     border-radius: 100%;
     padding: 0.15rem;
     font-size: 0.8rem;
-    border:1px solid var(--black);
+    border: 1px solid var(--black);
 }
 
-.note p{
+.note p {
     font-size: 0.7rem;
+}
+
+/*--------------------------------------------------------------RESPONSIVE HERO-------------------------------------------------------------------*/
+.menu{
+    z-index: 9000;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100vw;
+    height: 100vh;
+    gap: 3rem;
+    padding: 0.5rem;
+    background-color: var(--white);
+    transition: transform 0.8s ease;
+    transform: translateX(-100%);
+}
+
+.menu.show{
+    transform: translateX(100%);
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--black);
+    margin-left: 1.7rem;
+    font-weight: bold;
+}
+
+.menu i{
+    color: var(--secondary-color);
+    padding: rem;
+    font-size: 1.7rem;
+    margin-left: 23rem;
+}
+
+@media (max-width: 415px) {
+    header {
+        height: auto;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .navbar {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        width: 100vw;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    #showMenu {
+        display: block;
+        margin-left: 8rem;
+    }
+
+    .sign-out-btn {
+        padding: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .hero {
+        display: block;
+        width: 100vw;
+    }
+
+    .hero-left {
+        display: none;
+    }
+
+    .hero-rigth {
+        margin-top: ;
+        height: 65%;
+        margin-bottom: -4rem;
+    }
+
+    .background {
+        padding: 12rem 11.5rem;
+        border-radius: 50% 40% 45px 50%;
+    }
+
+    .girl {
+        width: 21.5rem;
+        margin-top: 4.5rem;
+        margin-left: 2rem;
+    }
+    
+    .fleche {
+        width: 5rem;
+        margin-left: 17rem;
+        margin-top: -2rem;
+    }
+
+    .banner {
+        width: 7.5rem;
+        margin-top: 23rem;
+        margin-left: 1.2rem;
+    }
+
+    .note {
+        padding: 0.2rem 1.5rem;
+        margin-top: 10rem;
+        margin-left: 0.2rem;
+        border-radius: 10px;
+    }
+
+    .note i{
+        margin-left: -1rem;
+    }
+
+    .note p {
+        font-size: 0.8rem;
+    }
 }

@@ -16,3 +16,18 @@ window.addEventListener("scroll", function(){
         navbar.classList.remove("sticky")
     }
 });
+
+document.addEventListener('DOMContentLoaded', function(){
+    const showBtn = document.getElementById('showMenu');
+    const menu = document.getElementById('menu');
+    const closeBtn = document.getElementById('closeMenu');
+
+
+    showBtn.addEventListener('click',function(){
+        menu.classList.add('show');
+    });
+
+    closeBtn.addEventListener('click', function() {
+        menu.classList.remove('show');
+    })
+})
