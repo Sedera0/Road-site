@@ -33,11 +33,13 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 5rem;
-    width: 95vw;
+    width: 96%;
+
+    margin-top: 1rem;
+    margin-left: 2rem;
     background-color: white;
     border-radius: 10px;
-    position: fixed;
-    margin: 1rem 2rem;
+    position: absolute;
     z-index: 9000;
     transition: top 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -89,8 +91,8 @@ header {
 
 /*-------------------------------------------------------------------------STICKY NAV---------------------------------------------------*/
 .sticky {
-    position: sticky;
-    width: 100vw;
+    position: fixed;
+    width: 100%;
     padding: 1rem 0;
     top: 0;
     margin: 0;
@@ -109,6 +111,7 @@ header {
     width: 100%;
     height: 100vh;
     gap: 20rem;
+    scroll-behavior: smooth;
 }
 
 .hero-left {
@@ -246,6 +249,7 @@ header {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+        background-color: transparent;
     }
 
     .navbar {
@@ -324,16 +328,17 @@ header {
 
 /*--------------------------------------------------------------------------SECTION 1----------------------------------------------------------------------------------------------*/
 .place {
-    opacity: 0;
-    transform: scale(0);
-    transition: opacity 1s ease, transform 1s ease;
+    margin-top: 2rem;
     width: auto;
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 75vh;
     justify-content: center;
     align-items: center;
     position: relative;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .place.visible{
@@ -344,7 +349,7 @@ header {
 .place-left {
     width: 50vw;
     display: flex;
-    margin-left: 8rem;;
+    margin-left: 7rem;
 }
 
 .placeX{
@@ -353,11 +358,11 @@ header {
 
 .place1{
     width: 15rem;
-    height: 14rem;
+    height: 13rem;
 }
 
 .place2{
-    height: 16rem;
+    height: 15rem;
     width: 17rem;
 }
 
@@ -375,22 +380,20 @@ header {
 }
 .three{
     position: absolute;
-    margin-top: -5rem;
     margin-left: 2rem;
     
 }
 .four{
     position: absolute;
-    margin-top: -4rem;
     margin-left: 20rem;
-
+    
 }
 
 .place-right{
+    margin-right: 3rem;
     display: flex;
     flex-direction: column;
     width: 50vw;
-    margin-left: -5rem;
     gap: 2rem;
 }
 
