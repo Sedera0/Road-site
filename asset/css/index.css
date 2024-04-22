@@ -293,9 +293,13 @@ header {
         padding-bottom: 1rem;
     }
 
-    .hero-left p{
+    .hero-left p {
         text-align: center;
         width: 25rem;
+    }
+
+    .get-started-btn {
+        margin: 0;
     }
 
     .hero-rigth {
@@ -434,8 +438,15 @@ header {
 .place-description {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 2rem;
+}
+
+.place-description p{
+    width: 34rem;
+}
+
+.place-description h2{
+    width: 28rem;
 }
 
 .place-description button {
@@ -456,3 +467,58 @@ header {
 }
 
 /*--------------------------------------------------------------------------SECTION 1 RESPONSIVE----------------------------------------------------------------------------------------------*/
+@media (max-width: 415px) {
+    .place {
+        display: block;
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        align-items: center;
+    }
+
+    .place-left {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .placeX {
+        position: relative;
+        margin: 0;
+        width: 21rem;
+        height: 21rem;
+    }
+
+    .place-right {
+        width: 100vw;
+        margin: 2rem 0;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .place-description h2{
+        width: 20rem;
+        font-size: 1.9rem;
+    }
+    .place-description p{
+        width: 21rem;
+
+    }
+    .place-description button{
+        padding: 1rem;
+    }
+    .place-rating{
+        justify-content: center;
+        width: 100vw;
+        gap: 0;
+        margin: 1rem;
+    }
+    .place-rating p{
+        width: 8rem;
+    }
+}
