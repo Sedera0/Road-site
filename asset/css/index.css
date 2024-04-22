@@ -40,7 +40,7 @@ header {
     border-radius: 10px;
     position: absolute;
     z-index: 9000;
-    transition: top 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    transition: top 1s ease, background-color 1s ease, box-shadow 1s ease;
 }
 
 .logo a {
@@ -65,7 +65,6 @@ header {
     flex-direction: row;
     align-items: center;
     text-align: center;
-    ;
     gap: 3rem;
 }
 
@@ -100,6 +99,7 @@ header {
     background-color: var(--tertiary-color);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 90000;
+    transition: top 1s ease, background-color 1s ease, box-shadow 1s ease;
 }
 
 /*-------------------------------------------------------------------------HERO---------------------------------------------------*/
@@ -347,13 +347,13 @@ header {
     }
 
     100% {
-       transform: scale(1);
-       opacity: 1;
+        transform: scale(1);
+        opacity: 1;
     }
 }
 
 .place.visible {
-    animation: scaling 1s ease;
+    animation: scaling 0.5s ease;
     transform: scale(1);
     opacity: 1;
 }

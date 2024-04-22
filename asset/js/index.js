@@ -1,40 +1,22 @@
-
-/**
- * Redirection vers login.html
-*/
+// Redirection vers login.html
 window.onload = function () {
-    let isLoggedIn = localStorage.getItem("isLoggedIn");
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
     if (!isLoggedIn && window.location.pathname !== "/login.html") {
         window.location.href = "login.html";
     }
 };
 
-
-
-/**
- * Sticky NAVBAR
-*/
+// Sticky NAVBAR
 window.addEventListener("scroll", function () {
-    let navbar = document.getElementById("navbar");
-
-    if (window.scrollY > 50) {
-        navbar.classList.add("sticky")
-    } else {
-        navbar.classList.remove("sticky")
-    }
-
+    const navbar = document.getElementById("navbar");
+    navbar.classList.toggle("sticky", window.scrollY > 5);
 });
 
-
-
-/**
- * Toogle Menu Button
- */
+// Toggle Menu Button
 document.addEventListener('DOMContentLoaded', function () {
-    let showBtn = document.getElementById('showMenu');
-    let menu = document.getElementById('menu');
-    let closeBtn = document.getElementById('closeMenu');
-
+    const showBtn = document.getElementById('showMenu');
+    const menu = document.getElementById('menu');
+    const closeBtn = document.getElementById('closeMenu');
 
     showBtn.addEventListener('click', function () {
         menu.classList.add('show');
@@ -43,61 +25,47 @@ document.addEventListener('DOMContentLoaded', function () {
     closeBtn.addEventListener('click', function () {
         menu.classList.remove('show');
     })
-})
+});
 
-/**
- * Chiffre Count
-*/
+// Chiffre Count
 function isVisible(section) {
     const screen = section.getBoundingClientRect();
-    return (
-        screen.top >= 0 &&
-        screen.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-    );
+    return screen.top <= window.innerHeight;
 }
+
+
 
 let isAnimate = false;
 window.addEventListener("scroll", function () {
     const placeSection = document.querySelector(".place");
-
-    if (isVisible(placeSection)) {
-        setTimeout(function () {
-            placeSection.classList.add("visible");
-        }, -2000);
-    };
-    animate();
-    isAnimate = true;
-}
-);
-
-
+    if (isVisible(placeSection) && !isAnimate) {
+        placeSection.classList.add("visible");
+        animate();
+        isAnimate = true;
+    }
+});
 
 function count(element, start, end, duration, unity = '') {
-    let range = end - start;
     let current = start;
-    let increment = end > start ? 1 : -1;
-    let stepTime = Math.abs(Math.floor(duration / range));
-    let timer = setInterval(function () {
+    const range = end - start;
+    const increment = end > start ? 1 : -1;
+    const stepTime = Math.abs(Math.floor(duration / range));
+    const timer = setInterval(function () {
         current += increment;
         element.textContent = current + unity;
         if (current == end) {
-            clearInterval(timer)
+            clearInterval(timer);
         }
-    }, stepTime)
+    }, stepTime);
 }
 
 function animate() {
-    let ratings = document.querySelectorAll('.place-rating');
-    let rating1 = document.getElementById('count1');
-    let rating2 = document.getElementById('count2');
-    let rating3 = document.getElementById('count3');
+    const ratingElements = document.querySelectorAll('.place-rating h2');
+    const endValues = [99, 220, 50];
+    const durations = [3000, 3000, 3000];
+    const unities = ["%", "", ""];
 
-    ratings.forEach(placeRating => {
-        if (isVisible(placeRating)) {
-            count(rating1, 0, 99, 2000, "%");
-            count(rating2, 0, 220, 2000);
-            count(rating3, 0, 50, 2000);
-        }
+    ratingElements.forEach((element, index) => {
+        count(element, 0, endValues[index], durations[index], unities[index]);
     });
 }
-
