@@ -61,15 +61,14 @@ window.addEventListener("scroll", function () {
     const placeSection = document.querySelector(".place");
 
     if (isVisible(placeSection)) {
-        placeSection.classList.add("visible");
-        animate();
-        isAnimate = true;
-    }
-});
-
-/**
- * Scale Effect
- */
+        setTimeout(function () {
+            placeSection.classList.add("visible");
+        }, -2000);
+    };
+    animate();
+    isAnimate = true;
+}
+);
 
 
 

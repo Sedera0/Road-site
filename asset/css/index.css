@@ -34,7 +34,6 @@ header {
     align-items: center;
     height: 5rem;
     width: 96%;
-
     margin-top: 1rem;
     margin-left: 2rem;
     background-color: white;
@@ -65,7 +64,8 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    text-align: center;;
+    text-align: center;
+    ;
     gap: 3rem;
 }
 
@@ -329,21 +329,33 @@ header {
 /*--------------------------------------------------------------------------SECTION 1----------------------------------------------------------------------------------------------*/
 .place {
     margin-top: 2rem;
-    width: auto;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     height: 75vh;
     justify-content: center;
     align-items: center;
     position: relative;
+    transform: scale(0);
     opacity: 0;
-    transform: scale(0.95);
-    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-.place.visible{
-    opacity: 1;
+@keyframes scaling {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100% {
+       transform: scale(1);
+       opacity: 1;
+    }
+}
+
+.place.visible {
+    animation: scaling 1s ease;
     transform: scale(1);
+    opacity: 1;
 }
 
 .place-left {
@@ -352,44 +364,47 @@ header {
     margin-left: 7rem;
 }
 
-.placeX{
+.placeX {
     border-radius: 15px;
 }
 
-.place1{
+.place1 {
     width: 15rem;
     height: 13rem;
 }
 
-.place2{
+.place2 {
     height: 15rem;
     width: 17rem;
 }
 
-.one{
+.one {
     position: absolute;
     top: 0;
     margin-top: 2rem;
     margin-left: 2rem;
 }
-.two{
+
+.two {
     position: absolute;
     top: 0;
     margin-top: 1rem;
     margin-left: 18rem;
 }
-.three{
+
+.three {
     position: absolute;
     margin-left: 2rem;
-    
-}
-.four{
-    position: absolute;
-    margin-left: 20rem;
-    
+
 }
 
-.place-right{
+.four {
+    position: absolute;
+    margin-left: 20rem;
+
+}
+
+.place-right {
     margin-right: 3rem;
     display: flex;
     flex-direction: column;
@@ -397,14 +412,14 @@ header {
     gap: 2rem;
 }
 
-.place-description{
+.place-description {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
 }
 
-.place-description button{
+.place-description button {
     width: fit-content;
     padding: 0.7rem 2rem;
     margin-right: 2rem;
@@ -414,9 +429,11 @@ header {
     border-radius: 5px;
 }
 
-.place-rating{
+.place-rating {
     display: flex;
     flex-direction: row;
     text-align: center;
     gap: 1rem;
 }
+
+/*--------------------------------------------------------------------------SECTION 1 RESPONSIVE----------------------------------------------------------------------------------------------*/

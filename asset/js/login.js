@@ -15,7 +15,7 @@ document.getElementById("login-form").addEventListener("submit", function (e) {
         localStorage.setItem("isLoggedIn", "true");
         loginBtn.innerHTML = "...";
         setTimeout(function () {
-            window.location.href = "index.html";
+            window.location = "index.html";
         }, 3000);
     }
 });
