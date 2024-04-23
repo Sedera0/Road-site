@@ -522,3 +522,110 @@ header {
         width: 8rem;
     }
 }
+
+/*-----------------------------------------------------------------------------------------SECTION 2-----------------------------------------------------*/
+.destination{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+    border: 1px solid chartreuse;
+}
+
+.destination-title{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.destination-title h2{
+    font-size: 1.5rem;
+}
+.destination-title p{
+    font-size: 1rem;
+}
+
+.destination-card-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.destination-card{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0.5px 5px 1px var(--tertiary-color);
+    filter: blur(box-shadow 50px);
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+
+.destination-card img{
+    width: 19rem;
+    height: 14rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.destination-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.destination-place{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.destination-sejour{
+    display: flex;
+    flex-direction: column;
+}
+
+.destination-rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--secondary-color);
+}
+
+.destination-activity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.activity{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.destination-price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+    padding: 0.5rem 0;
+    font-weight: 500;
+}
+
+.destination-price i{
+    color: var(--secondary-color);
+}
