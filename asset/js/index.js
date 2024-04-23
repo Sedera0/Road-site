@@ -35,9 +35,13 @@ function isVisible(section) {
 
 let isAnimatePlace = false;
 let isAnimateDestination = false;
+let isAnimateReservation = false;
+
 window.addEventListener("scroll", function () {
     const placeSection = document.querySelector(".place");
     const destinationSection = document.querySelector(".destination");
+    const reservationSection = document.querySelector(".reservation");
+    
     if (isVisible(placeSection) && !isAnimatePlace) {
         placeSection.classList.add("visible");
         animate();
@@ -46,8 +50,12 @@ window.addEventListener("scroll", function () {
 
     if (isVisible(destinationSection) && !isAnimateDestination) {
         destinationSection.classList.add("visible");
-        isAnimateDestination
-            = true;
+        isAnimateDestination = true;
+    }
+    
+    if (isVisible(reservationSection) && !isAnimateReservation) {
+        reservationSection.classList.add("visible");
+        isAnimateDestination = true;
     }
 });
 
