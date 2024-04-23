@@ -247,7 +247,7 @@ header {
 @media (max-width: 415px) {
     header {
         height: auto;
-        width: 100vw;
+        width: auto;
         padding: 0;
         margin: 0;
         box-sizing: border-box;
@@ -444,11 +444,11 @@ header {
     gap: 2rem;
 }
 
-.place-description p{
+.place-description p {
     width: 34rem;
 }
 
-.place-description h2{
+.place-description h2 {
     width: 28rem;
 }
 
@@ -504,30 +504,34 @@ header {
         justify-content: center;
     }
 
-    .place-description h2{
+    .place-description h2 {
         width: 20rem;
         font-size: 1.9rem;
     }
-    .place-description p{
+
+    .place-description p {
         width: 21rem;
 
     }
-    .place-description button{
+
+    .place-description button {
         padding: 1rem;
     }
-    .place-rating{
+
+    .place-rating {
         justify-content: center;
         width: 100vw;
         gap: 0;
         margin: 1rem;
     }
-    .place-rating p{
+
+    .place-rating p {
         width: 8rem;
     }
 }
 
 /*-----------------------------------------------------------------------------------------SECTION 2-----------------------------------------------------*/
-.destination{
+.destination {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -546,7 +550,7 @@ header {
     opacity: 1;
 }
 
-.destination-title{
+.destination-title {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -554,14 +558,15 @@ header {
     margin-bottom: 2rem;
 }
 
-.destination-title h2{
+.destination-title h2 {
     font-size: 2rem;
 }
-.destination-title p{
+
+.destination-title p {
     font-size: 1.2rem;
 }
 
-.destination-card-container{
+.destination-card-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -569,7 +574,7 @@ header {
     gap: 2rem;
 }
 
-.destination-card{
+.destination-card {
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0.5px 5px 1px var(--tertiary-color);
@@ -579,53 +584,53 @@ header {
     border-radius: 15px;
 }
 
-.destination-card img{
+.destination-card img {
     width: 20rem;
     height: 16rem;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
 }
 
-.destination-info{
+.destination-info {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     justify-content: center;
 }
 
-.destination-place{
+.destination-place {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.destination-sejour{
+.destination-sejour {
     display: flex;
     flex-direction: column;
 }
 
-.destination-rating{
+.destination-rating {
     display: flex;
     flex-direction: row;
     align-items: center;
     color: var(--secondary-color);
 }
 
-.destination-activity{
+.destination-activity {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.activity{
+.activity {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.destination-price{
+.destination-price {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -637,32 +642,32 @@ header {
     font-weight: 500;
 }
 
-.destination-price i{
+.destination-price i {
     color: var(--secondary-color);
 }
 
 /*----------------------------------------------------------------------------RESPONSIVE SECTION 2-------------------------------------------------------------------------------------------------*/
-@media (max-width: 415px){
-    .destination{
+@media (max-width: 415px) {
+    .destination {
         padding-top: 2rem;
         flex-direction: column;
         width: auto;
     }
-    
-    .destination-card-container{
+
+    .destination-card-container {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 1rem;
     }
-    
-    .destination-card{
-        width: fit-content;
+
+    .destination-card {
+        width: auto;
     }
 }
 
 /*-----------------------------------------------------------------------------SECTION 3------------------------------------------------------------*/
-.reservation{
+.reservation {
     height: auto;
     width: auto;
     display: flex;
@@ -673,71 +678,71 @@ header {
     opacity: 0;
 }
 
-.reservation.visible{
+.reservation.visible {
     animation: scaling 1s ease;
     transform: scale(1);
     opacity: 1;
 }
 
-.reservation-container{
+.reservation-container {
     display: flex;
     flex-direction: row;
     align-items: cente;
     background-color: var(--tertiary-color);
     height: auto;
-    padding: 1rem;
     gap: 2rem;
     border-radius: 15px;
 }
 
-.reservation-left{
+.reservation-left {
     display: flex;
     flex-direction: column;
     width: 50%;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
-.reservation-description{
+.reservation-description {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.reservation-description h2{
+.reservation-description h2 {
     font-size: 2rem;
 }
-.reservation-description p{
+
+.reservation-description p {
     font-size: 1rem;
     width: 35rem;
 }
 
-.reservation-form{
+.reservation-form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.reservation-form h3{
+.reservation-form h3 {
     font-size: 1.3rem;
 }
 
-.form{
+.form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
 }
 
-.index{
+.index {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.index p{
+.index p {
     font-weight: bold;
 }
 
-.champ{
+.champ {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
@@ -748,13 +753,13 @@ header {
     width: 14rem;
 }
 
-.champ input{
+.champ input {
     border: none;
     outline: none;
     background-color: transparent;
 }
 
-.make-reservation-btn{
+.make-reservation-btn {
     border: none;
     background-color: var(--secondary-color);
     color: var(--white);
@@ -763,18 +768,18 @@ header {
     place-self: center;
 }
 
-.reservation-right{
+.reservation-right {
     width: 50%;
 }
 
-.reservation-right img{
+.reservation-right img {
     border-radius: 10px;
     width: 35rem;
     height: 25rem;
     object-fit: cover;
 }
 
-.reservation-ok{
+.reservation-ok {
     display: none;
     flex-direction: row;
     position: absolute;
@@ -788,4 +793,60 @@ header {
     margin-right: 12.5rem;
     margin-bottom: 6.8rem;
     gap: 1rem;
+}
+
+/*-------------------------------------------------------RESPONSIVE SECTION 3--------------------------------------------*/
+@media (max-width: 415px) {
+    .reservation-container {
+        flex-direction: column-reverse;
+        width: fit-content;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 3rem;
+    }
+
+    .reservation-left{
+        width: auto;
+        gap: 1rem;
+    }
+
+    .reservation-description p {
+        width: 24rem;
+    }
+
+    .form{
+        display: block;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .champ{
+        padding: 1rem;
+        width: 23.7rem;
+        margin-bottom: 1rem;
+    }
+
+    .make-reservation-btn {
+        padding: 1.5rem 7rem;
+        margin-left: 1.5rem;
+    }
+    
+    .reservation-ok{
+        flex-direction: row;
+        width: auto;
+        padding: 0.4rem 0.6rem;
+        margin-right: 7rem;
+        margin-bottom: 5.5rem;
+    }
+
+    .reservation-right{
+        width: auto;
+       
+    }
+
+    .reservation-right img {
+        width: 24.5rem;
+        height: 30rem;
+    }
 }
