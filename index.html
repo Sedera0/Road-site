@@ -24,11 +24,11 @@
             </a>
         </div>
         <div class="nav-list">
-            <a href="Home">Home</a>
-            <a href="About">About</a>
-            <a href="Destination">Destination</a>
-            <a href="Hotel">Hotel</a>
-            <a href="Reservation">Reservation</a>
+            <a href="#Home">Home</a>
+            <a href="#places">About</a>
+            <a href="#Destination">Destination</a>
+            <a href="#Hotel">Hotel</a>
+            <a href="#Reservation">Reservation</a>
         </div>
         <i class="fa-solid fa-bars" id="showMenu"></i>
         <button class="sign-out-btn">Sign out</button>
@@ -47,7 +47,7 @@
         </div>
 
         <!------------------------------------------------------HERO SECTION---------------------------------------------------------------------->
-        <div class="hero">
+        <div class="hero" id="Home">
             <div class="hero-left">
                 <h1>Discover the <br> best destinations <br> in the world</h1>
                 <p>Welcome to JCRAM'V, your first destination for <br>
@@ -109,7 +109,7 @@
         </section>
         
         <!--------------------------------------------------------SECTION 2-------------------------------------------------------------------->
-        <section class="destination">
+        <section class="destination" id="Destination">
             <div class="destination-title">
                 <h2>Top Destination</h2>
                 <p>Explore our best destinaiton</p>
@@ -222,7 +222,7 @@
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="destination-card">
                     <img src="asset/images/topdestination1.jpg" alt="">
                     <div class="destination-info">
@@ -257,6 +257,53 @@
                             <i class="fa-solid fa-bookmark"></i><p>108.90$ / person</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--------------------------------------------------------SECTION 3-------------------------------------------------------------------->
+        <section class="reservation" id="Reservation">
+            <div class="reservation-container">
+                <div class="reservation-left">
+                    <div class="reservation-description">
+                        <h2>Life is short, the world is wide</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officilis harum
+                            natus ex, sit numquam eligendi illum cupiditate?
+                        </p>
+                    </div>
+                    <div class="reservation-form">
+                        <h2>Here our Reservation</h2>
+                        <form id="reservation-form">
+                            <div class="index">
+                                <p>Location</p>
+                                <div class="champ">
+                                    <i class="fa-solid fa-paper-plane"></i><input type="text" placeholder="where are you going" required>
+                                </div>
+                            </div>
+                            <div class="index">
+                                <p>Check in</p>
+                                <div class="champ">
+                                    <i class="fa-solid fa-calendar-check"></i><input type="date" required>
+                                </div>
+                            </div>
+                            <div class="index">
+                                <p>Check out</p>
+                                <div class="champ">
+                                    <i class="fa-solid fa-calendar-check"></i><input type="date" required>
+                                </div>
+                            </div>
+                            <div class="index">
+                                <p>E-mail</p>
+                                <div class="champ">
+                                    <i class="fa-solid fa-envelope"></i><input type="text" required>
+                                </div>
+                            </div>
+                            <input type="submit" value="make reservation" class="make-reservation-btn">
+                        </form>
+                    </div>
+                </div>
+                <div class="reservation-right">
+                    <img src="asset/images/reservation.jpg" alt="">
                 </div>
             </div>
         </section>
