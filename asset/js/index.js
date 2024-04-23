@@ -27,21 +27,27 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 });
 
-// Chiffre Count
+
 function isVisible(section) {
     const screen = section.getBoundingClientRect();
     return screen.top <= window.innerHeight;
 }
 
-
-
-let isAnimate = false;
+let isAnimatePlace = false;
+let isAnimateDestination = false;
 window.addEventListener("scroll", function () {
     const placeSection = document.querySelector(".place");
-    if (isVisible(placeSection) && !isAnimate) {
+    const destinationSection = document.querySelector(".destination");
+    if (isVisible(placeSection) && !isAnimatePlace) {
         placeSection.classList.add("visible");
         animate();
-        isAnimate = true;
+        isAnimatePlace = true;
+    }
+
+    if (isVisible(destinationSection) && !isAnimateDestination) {
+        destinationSection.classList.add("visible");
+        isAnimateDestination
+            = true;
     }
 });
 

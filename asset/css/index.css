@@ -533,7 +533,14 @@ header {
     height: auto;
     padding-top: 3rem;
     padding-bottom: 8rem;
-    border: 1px solid chartreuse;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.destination.visible {
+    animation: scaling 0.5s ease;
+    transform: scale(1);
+    opacity: 1;
 }
 
 .destination-title{
