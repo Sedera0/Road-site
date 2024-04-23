@@ -209,7 +209,7 @@ header {
 
 /*--------------------------------------------------------------RESPONSIVE HERO-------------------------------------------------------------------*/
 .menu {
-    z-index: 9000;
+    z-index: 9000000000;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -552,10 +552,10 @@ header {
 }
 
 .destination-title h2{
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 .destination-title p{
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .destination-card-container{
@@ -577,8 +577,8 @@ header {
 }
 
 .destination-card img{
-    width: 19rem;
-    height: 14rem;
+    width: 20rem;
+    height: 16rem;
     border-radius: 10px 10px 0 0;
 }
 
@@ -635,4 +635,24 @@ header {
 
 .destination-price i{
     color: var(--secondary-color);
+}
+
+/*----------------------------------------------------------------------------RESPONSIVE SECTION 2-------------------------------------------------------------------------------------------------*/
+@media (max-width: 415px){
+    .destination{
+        padding-top: 2rem;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .destination-card-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .destination-card{
+        width: fit-content;
+    }
 }
