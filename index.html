@@ -277,33 +277,36 @@
                             <div class="index">
                                 <p>Location</p>
                                 <div class="champ">
-                                    <i class="fa-solid fa-paper-plane"></i><input type="text" placeholder="where are you going" required>
+                                    <i class="fa-solid fa-paper-plane"></i><input type="text" id="location" placeholder="where are you going" required>
                                 </div>
                             </div>
                             <div class="index">
                                 <p>Check in</p>
                                 <div class="champ">
-                                    <i class="fa-solid fa-calendar-check"></i><input type="date" required>
+                                    <i class="fa-solid fa-calendar-check"></i><input type="date" id="date" required>
                                 </div>
                             </div>
                             <div class="index">
                                 <p>Check out</p>
                                 <div class="champ">
-                                    <i class="fa-solid fa-calendar-check"></i><input type="date" required>
+                                    <i class="fa-solid fa-calendar-check"></i><input type="date" id="date2" required>
                                 </div>
                             </div>
                             <div class="index">
                                 <p>E-mail</p>
                                 <div class="champ">
-                                    <i class="fa-solid fa-envelope"></i><input type="text" required>
+                                    <i class="fa-solid fa-envelope"></i><input type="text" id="mail" required>
                                 </div>
                             </div>
-                            <input type="submit" value="make reservation" class="make-reservation-btn">
+                            <input type="submit" value="make reservation" class="make-reservation-btn" id="make-reservation-btn">
                         </form>
                     </div>
                 </div>
                 <div class="reservation-right">
                     <img src="asset/images/reservation.jpg" alt="">
+                </div>
+                <div class="reservation-ok" id="success">
+                    <i class="fa-solid fa-square-check"></i><p>Reservation Success</p>
                 </div>
             </div>
         </section>

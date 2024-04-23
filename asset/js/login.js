@@ -10,6 +10,10 @@ document.getElementById("login-form").addEventListener("submit", function (e) {
 
     if (email !== myEmail || password !== myPassword) {
         error.style.display = "flex";
+
+        setTimeout(function () {
+            error.style.display = "none"
+        }, 3000);
     }
     else {
         localStorage.setItem("isLoggedIn", "true");

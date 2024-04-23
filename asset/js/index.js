@@ -41,7 +41,7 @@ window.addEventListener("scroll", function () {
     const placeSection = document.querySelector(".place");
     const destinationSection = document.querySelector(".destination");
     const reservationSection = document.querySelector(".reservation");
-    
+
     if (isVisible(placeSection) && !isAnimatePlace) {
         placeSection.classList.add("visible");
         animate();
@@ -52,7 +52,7 @@ window.addEventListener("scroll", function () {
         destinationSection.classList.add("visible");
         isAnimateDestination = true;
     }
-    
+
     if (isVisible(reservationSection) && !isAnimateReservation) {
         reservationSection.classList.add("visible");
         isAnimateDestination = true;
@@ -83,3 +83,22 @@ function animate() {
         count(element, 0, endValues[index], durations[index], unities[index]);
     });
 }
+
+
+document.getElementById("reservation-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const mail = document.getElementById("mail").value;
+    const location = document.getElementById("location").value;
+    const date = document.getElementById("date").value;
+    const date2 = document.getElementById("date2").value;
+    const success = document.getElementById("success");
+
+    if (mail !== '' && location !== '' && date !== '' && date2 !== '') {
+        success.style.display = "flex";
+
+        setTimeout(function () {
+            success.style.display = "none"
+        }, 4000);
+    }
+});
