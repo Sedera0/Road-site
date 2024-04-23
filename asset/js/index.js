@@ -17,14 +17,20 @@ document.addEventListener('DOMContentLoaded', function () {
     const showBtn = document.getElementById('showMenu');
     const menu = document.getElementById('menu');
     const closeBtn = document.getElementById('closeMenu');
-
+    const liens = document.querySelectorAll('#menu a')
     showBtn.addEventListener('click', function () {
         menu.classList.add('show');
     });
 
     closeBtn.addEventListener('click', function () {
         menu.classList.remove('show');
-    })
+    });
+
+    liens.forEach(function(lien){
+        lien.addEventListener('click', function(){
+            menu.classList.remove('show');
+        });
+    });
 });
 
 
