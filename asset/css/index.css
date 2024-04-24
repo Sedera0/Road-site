@@ -690,10 +690,11 @@ header {
     flex-direction: row;
     align-items: cente;
     background-color: var(--tertiary-color);
-    height: auto;
+    height: 30rem;
     padding: 0.5rem;
-    gap: 2rem;
+    gap: 1rem;
     border-radius: 15px;
+    width: 75rem;
 }
 
 .reservation-left {
@@ -701,6 +702,7 @@ header {
     flex-direction: column;
     width: 50%;
     justify-content: space-around;
+    margin-left: 0.5rem;
 }
 
 .reservation-description {
@@ -725,13 +727,13 @@ header {
 }
 
 .reservation-form h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .index {
@@ -752,7 +754,7 @@ header {
     padding: 0.4rem;
     align-items: center;
     margin-left: 0.1rem;
-    width: 14rem;
+    width: 15rem;
 }
 
 .champ input {
@@ -765,7 +767,7 @@ header {
     border: none;
     background-color: var(--secondary-color);
     color: var(--white);
-    padding: 0.4rem 10rem;
+    padding: 0.8rem 10rem;
     grid-column: span 2;
     place-self: center;
 }
@@ -776,8 +778,8 @@ header {
 
 .reservation-right img {
     border-radius: 10px;
-    width: 35rem;
-    height: 25rem;
+    width: 37rem;
+    height: 29rem;
     object-fit: cover;
 }
 
@@ -855,3 +857,53 @@ header {
 }
 
 /*------------------------------------------------------------------SECTION 4-----------------------------------------------*/
+.hotel{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.hotel-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hotel-title h2 {
+    font-size: 2rem;
+}
+
+.hotel-title p {
+    font-size: 1.2rem;
+}
+
+.hotel-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.side{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.side img{
+    height: 15rem;
+    width: 25rem;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.center{
+    width: 20rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 10px;
+}
