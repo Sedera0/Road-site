@@ -915,3 +915,8 @@ header {
     object-fit: cover;
     border-radius: 10px;
 }
+
+/*-----------------------------------------------RESPONSIVE SECTION 4--------------------------------------------------------*/
+@media (max-width: 415px) {
+    
+}
