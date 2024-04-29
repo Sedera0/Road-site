@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
         menu.classList.remove('show');
     });
 
-    liens.forEach(function(lien){
-        lien.addEventListener('click', function(){
+    liens.forEach(function (lien) {
+        lien.addEventListener('click', function () {
             menu.classList.remove('show');
         });
     });
@@ -115,3 +115,17 @@ document.getElementById("reservation-form").addEventListener("submit", function 
         }, 4000);
     }
 });
+
+const send = document.querySelector(".send");
+send.addEventListener('click', function () {
+    const sent = document.querySelector(".sent");
+    const valide = document.querySelector(".valide").value;
+
+    if (valide !== '') {
+        sent.style.display = "flex";
+
+        setTimeout(function () {
+            sent.style.display = "none"
+        }, 4000);
+    }
+})

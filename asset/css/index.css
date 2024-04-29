@@ -355,7 +355,7 @@ header {
 /*--------------------------------------------------------------------------SECTION 1----------------------------------------------------------------------------------------------*/
 .place {
     margin-top: 2rem;
-    width: 100vw;
+    width: auto;
     display: flex;
     flex-direction: row;
     height: 75vh;
@@ -537,7 +537,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: auto;
     height: auto;
     padding-top: 3rem;
     padding-bottom: 8rem;
@@ -801,6 +801,10 @@ header {
 
 /*-------------------------------------------------------RESPONSIVE SECTION 3--------------------------------------------*/
 @media (max-width: 415px) {
+    .reservation {
+        padding: 2rem;
+    }
+
     .reservation-container {
         flex-direction: column-reverse;
         width: fit-content;
@@ -808,9 +812,10 @@ header {
         justify-content: center;
         padding: 0;
         padding-bottom: 3rem;
+        height: auto;
     }
 
-    .reservation-left{
+    .reservation-left {
         width: auto;
         gap: 1rem;
     }
@@ -819,14 +824,14 @@ header {
         width: 24rem;
     }
 
-    .form{
+    .form {
         display: block;
         width: auto;
         align-items: center;
         justify-content: center;
     }
 
-    .champ{
+    .champ {
         padding: 1rem;
         width: 23.7rem;
         margin-bottom: 1rem;
@@ -836,8 +841,8 @@ header {
         padding: 1.5rem 7rem;
         margin-left: 1.5rem;
     }
-    
-    .reservation-ok{
+
+    .reservation-ok {
         flex-direction: row;
         width: auto;
         padding: 0.4rem 0.6rem;
@@ -845,9 +850,8 @@ header {
         margin-bottom: 5.5rem;
     }
 
-    .reservation-right{
+    .reservation-right {
         width: auto;
-       
     }
 
     .reservation-right img {
@@ -857,7 +861,7 @@ header {
 }
 
 /*------------------------------------------------------------------SECTION 4-----------------------------------------------*/
-.hotel{
+.hotel {
     height: auto;
     width: auto;
     display: flex;
@@ -868,7 +872,7 @@ header {
     opacity: 0;
 }
 
-.hotel.visible{
+.hotel.visible {
     animation: scaling 1s ease;
     transform: scale(1);
     opacity: 1;
@@ -877,6 +881,7 @@ header {
 .hotel-title {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -896,20 +901,20 @@ header {
     gap: 1.5rem;
 }
 
-.side{
+.side {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
 }
 
-.side img{
+.side img {
     height: 15rem;
     width: 25rem;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.center{
+.center {
     width: 20rem;
     height: 30rem;
     object-fit: cover;
@@ -918,5 +923,148 @@ header {
 
 /*-----------------------------------------------RESPONSIVE SECTION 4--------------------------------------------------------*/
 @media (max-width: 415px) {
-    
+    .hotel {
+        display: block;
+    }
+
+    .hotel-title p {
+        width: 14rem;
+    }
+
+    .hotel-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .hotel-container img {
+        width: 23rem;
+    }
+
+    .side img {
+        height: 30rem;
+    }
+
+    .center {
+        height: 15rem;
+    }
+}
+
+/*---------------------------------------------------------------FOOTER-----------------------------------------*/
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+    width: auto;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 10rem;
+    gap: 10rem;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-logo {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-logo img {
+    width: 4rem;
+}
+
+.footer-logo a {
+    display: flex;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.footer-logo h2 {
+    font-weight: normal;
+}
+
+.footer-logo span {
+    color: var(--secondary-color);
+}
+
+.footer-left p {
+    color: var(--white);
+    width: 20rem;
+}
+
+.footer-social {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-social i {
+    font-size: ;
+}
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    gap: 1rem;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    gap: 2rem;
+}
+
+.sign {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    background-color: var(--white);
+}
+
+.sign input {
+    width: 20rem;
+    height: 2.5rem;
+    outline: none;
+}
+
+.sign button {
+    outline: none;
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--black);
+    font-weight: bold;
+    padding: 0rem 2rem;
+}
+
+.sent {
+    display: none;
+    position: absolute;
+    color: var(--white);
+    right: 0;
+    padding: 1rem 0.5rem;
+    border-radius: 70%;
+    background-color: rgb(85, 158, 85);
+    margin-top: 11rem;
+    margin-right: 3rem;
+}
+
+.ending{
+    width: auto;
+    text-align: center;
+    color: var(--white);
+    background-color: rgba(128, 128, 128, 0.332);
+    padding: 0 0.5rem;
 }
