@@ -1004,13 +1004,30 @@ footer {
 }
 
 .footer-social {
-    border: 1px solid white;
     display: flex;
     flex-direction: row;
+    gap: 0.5rem;
 }
 
-.footer-social i {
-    font-size: ;
+.fa-brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--white);
+    width: 2rem;
+    height: 1.8rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.fa-facebook-f{
+    align-items: end;
+}
+
+.fa-brands:hover{
+    background-color: var(--secondary-color);
+    scale: 1.1;
 }
 
 .footer-center {
@@ -1067,4 +1084,44 @@ footer {
     color: var(--white);
     background-color: rgba(128, 128, 128, 0.332);
     padding: 0 0.5rem;
+}
+
+/*-----------------------------------------------------RESPONSIVE FOOTER----------------------------*/
+@media (max-width: 415px) {
+    footer{
+        width: auto;
+        height: auto;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .footer-top{
+        flex-direction: column;
+        margin: 1rem 0;
+        gap: 2rem;
+    }
+
+    .footer-left{
+        text-align: left;
+        align-items: center;
+    }
+
+    .footer-left p {
+        width: 25rem;
+    }
+
+    .sign input {
+        width: 16rem;
+    }
+
+    .ending{
+        width: 100vw;
+    }
+
+    .sent{
+        margin-top: 27rem;
+        margin-right: 0.5rem;
+    }
 }
