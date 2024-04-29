@@ -1010,15 +1010,13 @@ footer {
 }
 
 .fa-brands {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     background-color: var(--white);
     width: 2rem;
-    height: 1.8rem;
+    height: 1.6rem;
     font-size: 1.5rem;
     border-radius: 5px;
+    padding-top: 0.1rem;
 }
 
 .fa-facebook-f{
