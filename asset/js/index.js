@@ -10,7 +10,7 @@ window.onload = function () {
 window.addEventListener("scroll", function () {
     const navbar = document.getElementById("navbar");
     navbar.classList.toggle("sticky", window.scrollY > 5);
-});
+});;
 
 // Toggle Menu Button
 document.addEventListener('DOMContentLoaded', function () {
