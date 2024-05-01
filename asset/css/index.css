@@ -844,10 +844,13 @@ header {
 
     .reservation-ok {
         flex-direction: row;
-        width: auto;
         padding: 0.4rem 0.6rem;
-        margin-right: 7rem;
-        margin-bottom: 5.5rem;
+        position: absolute;
+        right: auto;
+        bottom: auto;
+        width: 50vw;
+        margin-top: 82rem;
+        margin-left: 12rem;
     }
 
     .reservation-right {
@@ -1019,11 +1022,11 @@ footer {
     padding-top: 0.1rem;
 }
 
-.fa-facebook-f{
+.fa-facebook-f {
     align-items: end;
 }
 
-.fa-brands:hover{
+.fa-brands:hover {
     background-color: var(--secondary-color);
     scale: 1.1;
 }
@@ -1076,7 +1079,7 @@ footer {
     margin-right: 3rem;
 }
 
-.ending{
+.ending {
     width: auto;
     text-align: center;
     color: var(--white);
@@ -1086,7 +1089,7 @@ footer {
 
 /*-----------------------------------------------------RESPONSIVE FOOTER----------------------------*/
 @media (max-width: 415px) {
-    footer{
+    footer {
         width: auto;
         height: auto;
         justify-content: center;
@@ -1094,14 +1097,14 @@ footer {
         align-items: center;
         gap: 0.5rem;
     }
-    
-    .footer-top{
+
+    .footer-top {
         flex-direction: column;
         margin: 1rem 0;
         gap: 2rem;
     }
 
-    .footer-left{
+    .footer-left {
         text-align: left;
         align-items: center;
     }
@@ -1114,11 +1117,11 @@ footer {
         width: 16rem;
     }
 
-    .ending{
+    .ending {
         width: 100vw;
     }
 
-    .sent{
+    .sent {
         margin-top: 27rem;
         margin-right: 0.5rem;
     }
