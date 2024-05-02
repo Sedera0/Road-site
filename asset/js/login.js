@@ -2,9 +2,9 @@ document.getElementById("login-form").addEventListener("submit", function (e) {
     e.preventDefault();
 
     const email = document.getElementById("email").value;
-    const myEmail = "sedera";
+    const myEmail = "hei.sedera@gmail.com";
     const password = document.getElementById("password").value;
-    const myPassword = "sedera";
+    const myPassword = "sedera3";
     const error = document.getElementById("error");
     const loginBtn = document.getElementById("loginBtn");
 
